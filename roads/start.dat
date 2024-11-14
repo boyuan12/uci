@@ -1,0 +1,12 @@
+TITLE The Fork
+DESCRIPTION
+You find yourself in a dense forest with three paths before you: left, center, and right. Each path leads to a different part of the forest.
+Then you heard a mysterious growling noise...
+
+Quick, you have to make a decision now!
+END DESCRIPTION
+COMMANDS
+L,LEFT:friendly
+C,CENTER:pond
+R,RIGHT:potion
+END COMMANDS
