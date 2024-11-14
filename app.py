@@ -1,4 +1,4 @@
-from flask import Flask, send_from_directory, request
+from flask import Flask, abort, request
 import os
 
 app = Flask(__name__)
@@ -9,15 +9,16 @@ def main():
 
 @app.route('/ics-h32/pset5/roads/<path:path>')
 def roads_adventure(path):
-    with open(os.path.join("roads", path)) as f:
-        data = f.read()
+    try:
+        with open(os.path.join("roads", path)) as f:
+            data = f.read()
 
-        if not request.headers.get("Accept"):
-            return data
-        else:
-            return f"<pre>{data}</pre>"
-    return send_from_directory('roads', path)
-
+            if not request.headers.get("Accept"):
+                return data
+            else:
+                return f"<pre>{data}</pre>"
+    except FileNotFoundError:
+        abort(404)
 
 if __name__ == "__main__":
     app.run()
