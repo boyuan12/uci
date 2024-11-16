@@ -22,9 +22,9 @@ def start_is_the_end_adventure(path):
         abort(404)
         
 @app.route('/ics-h32/pset5/edge/<path:path>')
-def start_is_the_end_adventure(path):
+def test_edge_cases(path):
     try:
-        return file_processing("start", path)
+        return file_processing("edge", path)
     except FileNotFoundError:
         abort(404)
 
