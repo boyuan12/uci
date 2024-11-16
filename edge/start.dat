@@ -1,0 +1,8 @@
+TITLE Edge Cases
+DESCRIPTION
+This file consists of some edge case commands.
+COMMANDS
+1:1
+2, :2
+3, 3:3
+END COMMANDS
