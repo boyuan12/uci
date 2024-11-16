@@ -1,0 +1,8 @@
+TITLE Pond
+DESCRIPTION
+You are now at the Pond. You suddenly feel very thirsty. Should you drink the water?
+END DESCRIPTION
+COMMANDS
+drink,yes:drink
+no:no drink
+END COMMANDS

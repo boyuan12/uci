@@ -1,0 +1,9 @@
+TITLE Friendly Elder
+DESCRIPTION
+You find yourself welcomed by a friendly elder. He warns you there is a scary witch and told you to go back to where you came from. Should you go back?
+
+END DESCRIPTION
+COMMANDS
+yes,y:start
+no,N:witch
+END COMMANDS

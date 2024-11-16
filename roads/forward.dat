@@ -1,0 +1,8 @@
+TITLE Witch
+DESCRIPTION
+Suddenly, an old, angery, scary witch presented herself in the middle of nowhere. She threaten to kill you unless you answered her riddle correctly. Her question is, who is your favorite professor at UCI?
+END DESCRIPTION
+COMMANDS
+thornton,prof. thornton,alex thornton:correct
+alex:dare
+END COMMANDS

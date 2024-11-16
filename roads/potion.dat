@@ -1,0 +1,8 @@
+TITLE Potion
+DESCRIPTION
+You found some potion lying near you. It does not say anything on the container. Should you take it?
+END DESCRIPTION
+COMMANDS
+yes,Y:witch
+no:drink
+END COMMANDS

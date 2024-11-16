@@ -1,0 +1,7 @@
+TITLE Dizzy
+DESCRIPTION
+For some reason you are getting dizzy. There's only a way to leave this place.
+END DESCRIPTION
+COMMANDS
+forward,OK,OKAY:witch
+END COMMANDS

@@ -1,0 +1,8 @@
+TITLE The Witch
+DESCRIPTION
+Suddenly, a witch appeared in the middle of nowhere. She threatens to kill you unless you answer her question correctly: Who is the best CS professor at UCI?
+END DESCRIPTION
+COMMANDS
+thornton,prof. thornton,alex thornton:correct
+alex:dare
+END COMMANDS
