@@ -1,4 +1,4 @@
-from flask import Flask, abort, request
+from flask import Flask, abort, request, send_file
 import os
 
 app = Flask(__name__)
@@ -6,6 +6,8 @@ app = Flask(__name__)
 @app.route("/")
 def main():
     return "This is Boyuan @ UCI. Zot. Zot. Zot."
+
+@app.route("/transcript/<path:path>")
 
 @app.route('/ics-h32/pset5/roads/<path:path>')
 def roads_adventure(path):
@@ -27,6 +29,11 @@ def test_edge_cases(path):
         return file_processing("edge", path)
     except FileNotFoundError:
         abort(404)
+
+@app.route('/plurality.zip')
+def test_edge_cases(path):
+    return send_file(os.path.join("distributions", "plurality.zip"), as_attachment=True)
+
 
 def file_processing(directory, path):
     with open(os.path.join(directory, path)) as f:
