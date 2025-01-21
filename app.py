@@ -31,7 +31,7 @@ def test_edge_cases(path):
         abort(404)
 
 @app.route('/plurality.zip')
-def plurality_zip(path):
+def plurality_zip():
     return send_file(os.path.join("distributions", "plurality.zip"), as_attachment=True)
 
 
